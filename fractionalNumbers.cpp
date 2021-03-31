@@ -2,17 +2,14 @@
 #include "Header.h"
 using namespace std;
 
-Fraction::Fraction(long int numerator = 0, unsigned short int denominator = 1)
+Fraction::Fraction(long int numerator = 0, unsigned short int denominator = 1) :m_Num(numerator, denominator)
 {
 	assert(denominator != 0);
-	m_Num.m_numerator = numerator; 
-	m_Num.m_denominator=denominator;
 }
 Fraction::Fraction()
 {
 	cin >> m_Num.m_numerator;
 	cin >> m_Num.m_denominator;
-
 }
 
 Fraction& Fraction::setNumerator(int numerator)
@@ -57,3 +54,8 @@ Fraction operator/(Fraction firstFraction, Fraction secondFraction)
 {
 	return Fraction(firstFraction.m_Num.m_numerator*secondFraction.m_Num.m_denominator, firstFraction.m_Num.m_denominator*secondFraction.m_Num.m_numerator);
 }
+
+Numbers::Numbers(long int numerator, unsigned short int denominator):m_numerator(numerator), m_denominator(denominator)
+{}
+
+Numbers::Numbers() {}

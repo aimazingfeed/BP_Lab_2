@@ -4,7 +4,8 @@ class Numbers
 public:
 	long int m_numerator;
 	unsigned short int m_denominator;
-
+	Numbers(long int, unsigned short int);
+	Numbers();
 };
 class Fraction
 {
