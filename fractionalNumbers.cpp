@@ -12,13 +12,13 @@ Fraction::Fraction()
 	cin >> m_Num.m_denominator;
 }
 
-Fraction& Fraction::setNumerator(int numerator)
+Fraction& Fraction::setNumerator(long int numerator)
 {
 	m_Num.m_numerator= numerator;
 	return *this;
 }
 
-Fraction& Fraction::setDenominator(int denominator)
+Fraction& Fraction::setDenominator(unsigned short int denominator)
 {
 	m_Num.m_denominator = denominator;
 	return *this;

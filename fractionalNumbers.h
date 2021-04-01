@@ -24,8 +24,8 @@ public:
 	
 	int getNumerator();
 	int getDenominator();
-	Fraction& setNumerator(int);
-	Fraction& setDenominator(int);
+	Fraction& setNumerator(long int);
+	Fraction& setDenominator(unsigned short int);
 	Fraction& show();
 	friend void show(Fraction);
 };
